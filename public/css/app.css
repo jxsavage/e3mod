@@ -1,0 +1,221 @@
+/* app css stylesheet */
+/*Front page split screen CSS*/
+body {
+    
+}
+
+.calander-iframe{
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+    border: darkorange solid;
+    border-radius: .5em;
+    margin-top: 1.5em;
+}
+
+.landing-page {
+    background-color: #111111;
+    background-image: url(/img/horns.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    font-family:'Oswald', sans-serif;
+    margin-top: 70px;
+}
+.booze-front-page-box {
+    background-color: #000000;
+    border: deeppink solid;
+    border-radius: .5em;
+    margin: 2em;
+    
+    text-align: center;
+    
+}
+
+
+.e3-front-page-box {
+    background-color: #000000;
+    border: darkorange solid;
+    border-radius: .5em;
+    margin: 2em;
+    
+    text-align: center;
+    
+}
+
+.e3mod-box {
+    background-color: #000000;
+    border: darkorange solid;
+    border-radius: .5em;
+    text-align: center;
+    margin-bottom: 2em;
+    
+}
+
+.press-box{
+    background-color: #101010;
+    border: darkorange solid;
+    border-radius: .5em;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 350px;
+    color: white;
+}
+
+.press-box-blank{
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.press-row{
+    margin: 0 auto;
+}
+
+.press-box > a > img {
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 60%;
+}
+
+.boozetique-box {
+    background-color: #000000;
+    border: deeppink solid;
+    border-radius: .5em;
+    text-align: center;
+    
+}
+
+.logo {
+    height: 400px;
+    max-width: 100%;
+}
+/* nav bar */
+.nav-image {
+    max-height: 100%;
+    
+}
+
+.booze-nav > a:link{
+    color: deeppink !important;
+}
+
+.navbar-info{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    pointer-events: none;
+}
+
+/*carousel */
+.item > img{
+    max-width: 400px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+.carousel {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+/* text coloring for E3 modern title */
+.white-e3{
+    color: #fff
+}
+
+.orange-e3 {
+    color: darkorange;
+}
+
+.pink-booze {
+    font-family:damion, sans-serif !important;
+    color: deeppink;
+    font-size: 1.3em;
+}
+
+.text-body-e3 {
+    text-align: left;
+    color: #FFF;
+    letter-spacing:1px;
+    margin-bottom: 2em;
+    font-size: 1.2em; 
+    
+}
+
+.form-body-e3 {
+    text-align: left;
+    color: #FFF;
+    letter-spacing:1px;
+    margin-bottom: 2em;
+    font-size: 1em; 
+    
+}
+
+.form-body-e3 > form > div > label {
+    display: block;
+}
+
+.form-body-e3 > form > div > input {
+    color: #000000;
+}
+
+.form-body-e3 > form > div > textarea {
+    color: #000000 !important;
+}
+#map-container {
+    height: 500px;
+    border-radius:5px;
+}
+.inline-img {
+    float: right;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/*ABOUT */
+.about-title {
+    border-bottom: 1px solid gray;
+    margin-bottom: 2em;
+}
+
+.gallery-title {
+    border-top: 1px solid gray;
+    padding-top: 2em;
+}
+
+/*DO NOT TOUCH*/
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}

@@ -1,0 +1,37 @@
+<div class="container">
+
+      <div class="row">
+          <div class="col-md-5 e3-front-page-box">
+              <a href="#/e3modern"><img class="logo" src="public/app/img/e3mod-logo.png" alt="E3 Modern Art and Hi-Fi Audio"/></a>
+              <div ng-controller="carouselCtrl">
+                <div>
+                  <carousel interval="myInterval" class="carousel">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                      <img ng-src="{{slide.image}}" style="margin:auto;">
+                      <div class="carousel-caption">
+                        <h4>Slide {{$index + 1}}</h4>
+                        <p>{{slide.text}}</p>
+                      </div>
+                    </slide>
+                  </carousel>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-5 col-md-offset-1 booze-front-page-box">
+              <a href="#/boozetique"><img class="logo" src="public/app/img/booze-logo-square.png" alt="The Boozetique"/></a>
+              <div ng-controller="carouselCtrl">
+                <div>
+                  <carousel interval="myInterval" class="carousel">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                      <img ng-src="{{slide.image}}" style="margin:auto;">
+                      <div class="carousel-caption">
+                        <h4>Slide {{$index + 1}}</h4>
+                        <p>{{slide.text}}</p>
+                      </div>
+                    </slide>
+                  </carousel>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
