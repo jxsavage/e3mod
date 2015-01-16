@@ -20,7 +20,7 @@
             </ul>
         </div>
         <div class="col-md-4 col-md-offset-1 form-body-e3">
-            {{ Form:: open(array('url' => 'contact_request'))}}
+            {{ Form:: open(['url' => 'contact_request'])}}
             <ul class="errors">
                 @foreach($errors->all('<li>:message</li>') as $message)
                 {{ $message }}
@@ -39,12 +39,12 @@
             
             <div class='form-group'>
             {{Form:: label('phone_number', 'Phone Number:')}}
-            {{Form:: text('phone_number', '', array('placeholder' => '8015555555'))}}
+            {{Form:: text('phone_number', '', ['placeholder' => '8015555555'])}}
             </div>
             
             <div class='form-group'>
             {{Form:: label('email', 'E-mail Address*:')}}
-            {{Form:: text('email', '', array('placeholder' => 'me@example.com'))}}
+            {{Form:: text('email', '', ['placeholder' => 'me@example.com'])}}
             </div>
             
             <div class='form-group'>
@@ -58,8 +58,8 @@
             </div>
             
             <div class='form-group'>
-            {{Form::reset('Clear', array('class' => 'clear-button'))}}
-            {{Form::submit('Send', array('class' => 'send-button'))}}
+            {{Form::reset('Clear', ['class' => 'clear-button'])}}
+            {{Form::submit('Send', ['class' => 'send-button'])}}
             </div>
             
             {{Form::hidden('route', Route::getCurrentRoute()->getPath())}}

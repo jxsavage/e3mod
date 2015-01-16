@@ -7,9 +7,15 @@ function init_map(){
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     
-    var var_marker = new google.maps.Marker({
+    var var_e3_marker = new google.maps.Marker({
         position: var_location,
         icon: '/img/e3transparent.png',
+        map: var_map,
+        title:"E3 Modern"
+    });
+    
+    var var_marker = new google.maps.Marker({
+        position: var_location,
         map: var_map,
         title:"E3 Modern"
     });
@@ -17,6 +23,7 @@ function init_map(){
     var var_map = new google.maps.Map(document.getElementById("map-container"), var_mapoptions);
     
     var_marker.setMap(var_map);
+    var_e3_marker.setMap(var_map);
     
     
 }

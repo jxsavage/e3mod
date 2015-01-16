@@ -8,8 +8,7 @@
             <img src="/img/e3mod-logo.png" alt="E3 Modern">
         </div>
         <div class="col-md-8 ">
-            <!-- id = e3-carousel-main class = large-carousel -->
-            {{$e3Carousel}}
+            {{HTML::carousel($id = "e3-carousel-main", $classes = ["large-carousel"], $folder = "e3mod_main");}}
         </div>
     </div>
     <div class="row">
@@ -25,18 +24,16 @@
     <div class="row">
         <div class="col-md-4 ">
             <h2><span class="white-e3">Modern</span> <span class="orange-e3">Furniture</span></h2>
-            <!-- id = e3-carousel-small-1 class = small-carousel -->
-            {{$carouselSmall1}}
+            {{HTML::carousel($id = "e3-carousel-small-1", $classes = ["small-carousel"], $folder = "e3mod_small_1");}}
+
         </div>
         <div class="col-md-4 ">
             <h2><span class="white-e3">Unique</span> <span class="orange-e3">Fixtures</span></h2>
-            <!-- id = e3-carousel-small-2 class = small-carousel -->
-            {{$carouselSmall2}}
+            {{HTML::carousel($id = "e3-carousel-small-2", $classes = ["small-carousel"], $folder = "e3mod_small_2");}}
         </div>
         <div class="col-md-4 ">
             <h2><span class="white-e3">Local</span> <span class="orange-e3">Art</span></h2>
-            <!-- id = e3-carousel-small-3 class = small-carousel -->
-            {{$carouselSmall3}}
+            {{HTML::carousel($id = "e3-carousel-small-3", $classes = ["small-carousel"], $folder = "e3mod_small_3");}}
         </div>
     </div>
 </div>

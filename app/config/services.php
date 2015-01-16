@@ -19,9 +19,9 @@ return array(
 		'secret' => '',
 	),
 
-	'mandrill' => array(
-		'secret' => '',
-	),
+	'mandrill' => [
+		'secret' => $_ENV['MANDRILL_SECRET'],
+	],
 
 	'stripe' => array(
 		'model'  => 'User',

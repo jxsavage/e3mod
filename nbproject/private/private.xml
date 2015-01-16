@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/wamp/www/e3mod_dev/app/controllers/PagesController.php</file>
+            <file>file:/C:/wamp/www/e3mod_dev/.env.local.php</file>
+            <file>file:/C:/wamp/www/e3mod_dev/app/start/global.php</file>
+            <file>file:/C:/wamp/www/e3mod_dev/app/helpers/ImageHelper.php</file>
+            <file>file:/C:/wamp/www/e3mod_dev/app/macros.php</file>
+            <file>file:/C:/wamp/www/e3mod_dev/public/css/app.css</file>
+            <file>file:/C:/wamp/www/e3mod_dev/public/js/photo-gallery.js</file>
+        </group>
     </open-files>
 </project-private>

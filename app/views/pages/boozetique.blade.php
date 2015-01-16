@@ -7,8 +7,8 @@
             <img src="/img/booze-logo-square.png" alt="The Boozetique">
         </div>
         <div class="col-md-8 ">
-            <!-- id = booze-carousel-main class = large-carousel -->
-            {{$boozeCarousel}}
+            
+            {{HTML::carousel($id = "booze-carousel-main", $classes = ["large-carousel"], $folder = "booze_main");}}
         </div>
     </div>
     <div class="row">
@@ -19,25 +19,25 @@
             
         </div>
         <div class="col-md-4" >
-            <h2><span class="white-e3">Featured</span> <span class="pink-booze">Item</span></h2>
-            <img  src="/img/entry-call.jpg" alt="Call for Entries.">
+<!--            <h2><span class="white-e3">Featured</span> <span class="pink-booze">Item</span></h2>-->
+            <img  class='booze-side-img' src="/img/booze_main/woodtable-with-stuff.jpg" alt="Table with drink shakers">
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 ">
-            <h2><span class="white-e3">Item</span> <span class="pink-booze">Type</span></h2>
-            <!-- id = booze-carousel-small-1 class = small-carousel -->
-            {{$carouselSmall1}}
+            <!--<h2><span class="white-e3">Item</span> <span class="pink-booze">Type</span></h2>-->
+            
+            {{HTML::carousel($id = "booze-carousel-small-1", $classes = ["small-carousel"], $folder = "booze_small_1");}}
         </div>
         <div class="col-md-4 ">
-            <h2><span class="white-e3">Item</span> <span class="pink-booze">Type</span></h2>
-            <!-- id = booze-carousel-small-2 class = small-carousel -->
-            {{$carouselSmall2}}
+<!--            <h2><span class="white-e3">Item</span> <span class="pink-booze">Type</span></h2>-->
+            
+            {{HTML::carousel($id = "booze-carousel-small-2", $classes = ["small-carousel"], $folder = "booze_small_2");}}
         </div>
         <div class="col-md-4 ">
-            <h2><span class="white-e3">Item</span> <span class="pink-booze">Type</span></h2>
-            <!-- id = booze-carousel-small-3 class = small-carousel -->
-            {{$carouselSmall3}}
+<!--            <h2><span class="white-e3">Item</span> <span class="pink-booze">Type</span></h2>-->
+            
+            {{HTML::carousel($id = "booze-carousel-small-3", $classes = ["small-carousel"], $folder = "booze_small_3");}}
         </div>
     </div>
 </div>
