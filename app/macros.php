@@ -5,7 +5,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-use Illuminate\Html\HtmlBuilder;
+
+HTML::macro('contactForm', function(){
+    return " ";
+});
 
 HTML::macro('carousel', function($id, $classes = [''], $folder ){
     $images = glob(public_path() . '/img/'.$folder.'/*.{jpg,png,jpeg,gif}', GLOB_BRACE);

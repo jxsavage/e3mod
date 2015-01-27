@@ -29,7 +29,9 @@ class PagesController extends BaseController {
             'last_name' => 'required|alpha',
             'phone_number' => 'numeric|digits:10',
             'email' => 'required|email',
-            'message' => 'required|min:15'
+            'message' => 'required|min:15',
+            //'winnie' => 'honeypot',
+            //'my_time' =>'required|honeytime:5',
         );
         
         //validate data
@@ -39,9 +41,9 @@ class PagesController extends BaseController {
         if ($validator -> passes()){
             Mail::send('emails.hello', $data, function($message) use ($data){
                 //email 'From' field: get the users email and first name
-                $message->from($data['email'], $data['first_name']);
+                $message->from($data['email'], $data['first_name'].' '.$data['last_name']);
                 //email 'To' fiend: email that you want to be notified on
-                $message->to('jxsavage@msn.com', 'Jake')->subject('Contact request from '.$data['first_name'].' '.$data['last_name']);
+                $message->to('ivy@e3modern.com', 'Ivy')->subject('Contact request from '.$data['first_name'].' '.$data['last_name']);
             });
             //finally return the view
             return View::make('pages/'.$data['route']);

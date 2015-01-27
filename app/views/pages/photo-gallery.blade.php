@@ -28,7 +28,7 @@
     <div class="row">
         @foreach ($artPics as $artPic)
         
-        <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="image-box" style='background-image:url({{$artPic}})' ></div>
         </div>
         @endforeach
@@ -40,7 +40,7 @@
     </div>
     <div class="row">
         @foreach ($electronicPics as $electronicPic)
-        <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="image-box" style='background-image:url({{$electronicPic}})' ></div>
         </div>
         @endforeach
@@ -52,7 +52,7 @@
     </div>
     <div class="row">
         @foreach ($fixturePics as $fixturePic)
-        <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="image-box" style='background-image:url({{$fixturePic}})' ></div>
         </div>
         @endforeach

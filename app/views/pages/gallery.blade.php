@@ -5,7 +5,7 @@
 <div class="container e3mod-box">
     <div class="row ">
         <div class="col-md-4">
-            <img src="/img/e3mod-logo.png" alt="E3 Modern">
+            <img class='logo' src="/img/e3mod-logo.png" alt="E3 Modern">
         </div>
         <div class="col-md-8 ">
             {{HTML::carousel($id = "e3-carousel-main", $classes = ["large-carousel"], $folder = "e3mod_main");}}

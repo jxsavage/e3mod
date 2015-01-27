@@ -54,7 +54,8 @@
                 {{Form::submit('Send', array('class' => 'send-button'))}}
             </div>
 
-            {{Form::hidden('route', Route::getCurrentRoute()->getPath())}}
+            {{Form::hidden('route', 'events')}}
+            {{Form::honeypot('winnie', 'my_time')}}
 
             {{Form:: close()}}            
         </div>

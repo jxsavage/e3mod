@@ -4,7 +4,7 @@
 <div class="container boozetique-box">
     <div class="row ">
         <div class="col-md-4">
-            <img src="/img/booze-logo-square.png" alt="The Boozetique">
+            <img class='logo' src="/img/booze-logo-square.png" alt="The Boozetique">
         </div>
         <div class="col-md-8 ">
             
